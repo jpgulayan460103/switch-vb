@@ -28,15 +28,16 @@ Partial Class Form1
         Me.onpb = New System.Windows.Forms.PictureBox()
         Me.offpb = New System.Windows.Forms.PictureBox()
         Me.header_pnl = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Panel1 = New System.Windows.Forms.Panel()
         Panel1.SuspendLayout()
         CType(Me.onpb, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -52,6 +53,7 @@ Partial Class Form1
         Panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Panel1.Controls.Add(Me.Button1)
         Panel1.Controls.Add(Me.onpb)
         Panel1.Controls.Add(Me.offpb)
         Panel1.Location = New System.Drawing.Point(12, 92)
@@ -93,6 +95,30 @@ Partial Class Form1
         Me.header_pnl.Name = "header_pnl"
         Me.header_pnl.Size = New System.Drawing.Size(1252, 77)
         Me.header_pnl.TabIndex = 1
+        '
+        'Label2
+        '
+        Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(20, 11)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(127, 66)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "wednesday"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label1.Font = New System.Drawing.Font("Vineta BT", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(141, 11)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(389, 54)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "00:00:00:00"
         '
         'PictureBox1
         '
@@ -157,32 +183,17 @@ Partial Class Form1
         Me.Panel6.Size = New System.Drawing.Size(685, 51)
         Me.Panel6.TabIndex = 4
         '
-        'Label1
-        '
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label1.Font = New System.Drawing.Font("Vineta BT", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(141, 11)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(389, 54)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "00:00:00:00"
-        '
         'Timer1
         '
         '
-        'Label2
+        'Button1
         '
-        Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(20, 11)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(127, 66)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "wednesday"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button1.Location = New System.Drawing.Point(113, 69)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(302, 171)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -224,4 +235,5 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label2 As Label
+    Friend WithEvents Button1 As Button
 End Class
